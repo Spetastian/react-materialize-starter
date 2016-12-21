@@ -3,7 +3,10 @@
 ## Getting started
 
 1. Clone repo
-2. `npm install`
-3. `npm install webpack@2.2.0-rc.1 webpack-dev-server -g`
-4. `npm run dev`
-5. Enjoy :)
+2. Requires nvm: `nvm use`
+3. `npm install`
+4. `npm install webpack@2.2.0-rc.1 webpack-dev-server -g`
+5. `npm run dev`
+6. Enjoy :)
+
+`npm run dev` will start webpack-dev-server. If you change or add any code to the application the server will automatically restart and refersh the browser.
