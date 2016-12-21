@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>React starter</title>
+
+    <!-- 
+        We reference /app.css since we aready know that it will be there.
+        Because the css will be put in the same folder (dist) as index.html by webpack.
+        Webpack-dev-server is configured to make everything in the dist-folder public to the browser.
+    -->
+    <link href="/app.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- 
+        An element with the id "app" is the mounting point for the main react component. 
+        See ./app/App.jsx (where the render function is called at the bottom).
+    -->
+<div id="app"></div>
+
+<!-- 
+    We reference /bundle.js since we aready know that it will be there.
+    Because the bundle will be put in the same folder (dist) as index.html by webpack. 
+    Webpack-dev-server is configured to make everything in the dist-folder public to the browser.
+ -->
+<script src="/bundle.js"></script>
+  </body>
+</html>
