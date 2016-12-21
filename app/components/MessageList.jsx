@@ -13,12 +13,13 @@ const MessageList = ({messages}) => {
     // Map the messages in the array to:
     const messagesTemplates = messages.map( (message, index) => {
         
-        // For each message in the array:
+        // For each message in the array. Create a MessageCard component:
         return (
             <MessageCard key={index} title={`Name: ${message.firstname} ${message.lastname}`} text={message.body}/>
         );
     });
 
+    // The variable messagesTemplates is an array of MessageCard components (se messages.map-function above).
     return <div>{messagesTemplates}</div> 
 }
    

@@ -9,10 +9,12 @@ import { render } from 'react-dom';
 */
 class MessageForm extends Component {
     
+    // Define what properties this component takes and what types they are.
     static propTypes = {
         onMessageCreated: React.PropTypes.func.isRequired
     }
 
+    // Set initial component state
     state = {
         firstname: "",
         lastname: "",

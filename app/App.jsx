@@ -12,6 +12,10 @@ import MessageBoard from './components/MessageBoard';
 */
 class App extends Component {
   render() {
+    /*
+      The title-property passed in the Header component below is the one that
+      is received as {title} in Header.jsx.
+    */
     return (
       <div>
         <Header title="Testing react with Materialize" />

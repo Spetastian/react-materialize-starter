@@ -9,20 +9,18 @@ import MessageList from './MessageList'
     a render functon that returns JSX-code.
     JSX-code can be a mix of standard HTML and your own react components.
 */
-
-const fakeMessages = 
-[
-    {key:1, firstname: "Sebastian", lastname: "Lindström", body:"Hej"},
-    {key:2, firstname: "Sebastian", lastname: "Lindström", body:"Hej2"},
-    {key:3, firstname: "Sebastian", lastname: "Lindström", body:"Hej3"}
-];
-
 export default class MessageBoard extends Component {
     
+    // Initial component state
     state = {
         messages: []
     }
 
+    /* 
+        Function that is passed as a callback to the MessageForm component below.
+        The firstname, lastname, messageBody properties are sent when the 
+        MessageFrom component executes the callback (se MessageForm.jsx).
+    */
     _handleOnMessageCreated = ({firstname, lastname, messageBody}) => {
         this.setState(
             {
@@ -31,6 +29,8 @@ export default class MessageBoard extends Component {
                     [
                         // Using spread operator ( ... ) to add the old messages to a new array together with the new message as well
                         ...this.state.messages, 
+
+                        // ... and add a new entry to the messages array
                         {
                             firstname: firstname,
                             lastname: lastname,

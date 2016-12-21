@@ -5,6 +5,8 @@ import { render } from 'react-dom';
     A react component can also be just a plain pure function that just returns JSX.
     This is a lower order component or a "dumb" component since it has no affect on application state or has any specifi logic.
     It justs renders with the properties it gets.
+
+    The title-property comes from App.jsx when the component is called there.
 */
 const NavBar = ({title}) => 
     <nav className="light-blue lighten-1" role="navigation">
