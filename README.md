@@ -3,7 +3,7 @@
 ## Getting started
 
 1. Clone repo
-2. Requires nvm: `nvm use`
+2. Requires node >7 (se .nvmrc file): `nvm use`
 3. `npm install`
 4. `npm install webpack@2.2.0-rc.1 webpack-dev-server -g`
 5. `npm run dev`
