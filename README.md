@@ -9,4 +9,4 @@
 5. `npm run dev`
 6. Enjoy :)
 
-`npm run dev` will start webpack-dev-server. If you change or add any code to the application the server will automatically restart and refersh the browser.
+`npm run dev` will start webpack-dev-server. If you change or add any code to the application the code will automatically be rebuiltand the browser updated.
